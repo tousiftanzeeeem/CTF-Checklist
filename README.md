@@ -57,7 +57,8 @@ To extract hidden data within whitespace characters(tab/space)
 stepic --decode --image-in PNG_Magic.png --out new_image.png
 ```
 
-This instructs the stepic tool to decode (extract) any hidden message or data embedded within an image file. 25. to extract usb transferred file "packets having size greater than 1000 bytes with flags URB_BULK out/in"
+This instructs the stepic tool to decode (extract) any hidden message or data embedded within an image file.  
+25. to extract usb transferred file "packets having size greater than 1000 bytes with flags URB_BULK out/in"
 
 26. ?tom[]=1&jerry[]=2  
     When you pass arrays as parameters:
