@@ -57,15 +57,15 @@ To extract hidden data within whitespace characters(tab/space)
 stepic --decode --image-in PNG_Magic.png --out new_image.png
 ```
 
-This instructs the stepic tool to decode (extract) any hidden message or data embedded within an image file.  
+This instructs the stepic tool to decode (extract) any hidden message or data embedded within an image file.
+
 25. to extract usb transferred file "packets having size greater than 1000 bytes with flags URB_BULK out/in"
 
 26. ?tom[]=1&jerry[]=2  
-    When you pass arrays as parameters:
-
-$\_GET['tom'] != $\_GET['jerry'] will be true because they are different arrays
-When PHP tries to concatenate 'ACECTF' with these arrays, it converts the arrays to strings, resulting in 'ACECTFArray' in both cases
-Since md5('ACECTFArray') == md5('ACECTFArray'), the second condition is satisfied
+     When you pass arrays as parameters:
+    $\_GET['tom'] != $\_GET['jerry'] will be true because they are different arrays
+    When PHP tries to concatenate 'ACECTF' with these arrays, it converts the arrays to strings, resulting in 'ACECTFArray' in both cases
+    Since md5('ACECTFArray') == md5('ACECTFArray'), the second condition is satisfied
 
 27. dont just rely on browser make curllllllll!!
 28. to fix broken video fix.video
