@@ -42,10 +42,12 @@ To extract hidden data within whitespace characters(tab/space)
     in hex representation
 
 18. try xoring with image in steganography
-19. to mount a file system
+19. to mount a file system from an image file
 
 ```bash
-       mkdir mountpoint; sudo mount d mountpoint
+       mkdir mountpoint  
+       sudo mount -o loop disk_image.img mountpoint
+
 ```
 
 20. https://fotoforensics.com/
