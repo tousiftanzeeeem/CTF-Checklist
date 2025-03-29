@@ -2,7 +2,7 @@
 
 1. For TXT record of a domain name [nslookup.io](https://nslookup.io)
 2. for audio steganography [stegonaut](https://www.stegonaut.com/)
-3. For whitespace trimming bypass ${IFS} or read file using cat<flag or strings<flag
+3. For whitespace trimming bypass use ${IFS} to represent space or read file using cat<flag or strings<flag  
 4. wget -r -np http://test.com
    This command will recursively download all files and subdirectories from http://test.com, but it will not follow links that lead to parent directories.
 
