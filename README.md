@@ -73,3 +73,11 @@ This instructs the stepic tool to decode (extract) any hidden message or data em
 28. to fix broken video fix.video
 29. GIF89a; is the gif file header useful for bypassing file upload restriction
 30. ezzip to find frames from a gif file
+31. If the server variable is said to expect something starting with ‘HTTP_’ in it’s name, then this means that this value will be pulled from the client HTTP headers.
+32. I can store xxe payload in pastebin and provide the link to fetch it from there
+33. ;{ls,'/fl``ag'}
+    ;{ls,/fl\\ag}
+      To bypass restrictions
+34. ;{cat,/tmp/*}
+     bypass space
+35. Always check zero width encoding in plain text
