@@ -81,3 +81,5 @@ This instructs the stepic tool to decode (extract) any hidden message or data em
 34. ;{cat,/tmp/*}
      bypass space
 35. Always check zero width encoding in plain text
+36. PHP is a weird language, sometimes it can do really weird stuff, like let's say the built-in function preg_match().
+According to HackTricks, when a very large valid input is being parsed to preg_match(), it'll just hit the limit and can't process it. Hence, we can bypass the regular expression check by just sending a large valid input!
