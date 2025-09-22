@@ -5,4 +5,8 @@
 3. Brute force secret key in symmetric algorithm
 4. Use jwk header
  ---> Use Burpsuite extension for attack
-5.
+5. Use jku header
+ ---> Use Burpsuite extension for attack
+6. Using kid header paramater
+ ---> if kid points to any file in the system wecan use /dev/null as kid and sign the key using empty string '' or contents of any file we just
+      have to give the location of the file in kid paramter
