@@ -1,8 +1,0 @@
-1. Unverified Signature
- --->  change content/ signature not verified by server
-2. None algorithm attack
- ---> check none, NONE,None etc
-3. Brute force secret key in symmetric algorithm
-4. Use jwk header
- ---> Use Burpsuite extension for attack
-5.
