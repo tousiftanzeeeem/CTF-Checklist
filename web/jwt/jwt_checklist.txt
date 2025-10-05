@@ -5,4 +5,9 @@
 3. Brute force secret key in symmetric algorithm
 4. Use jwk header
  ---> Use Burpsuite extension for attack
-5.
+5. Use jku header
+ ---> Use Burpsuite extension for attack
+6. Using kid header paramater
+ ---> if kid points to any file in the system wecan use /dev/null as kid and sign the key using empty string '' or contents of any file we just
+      have to give the location of the file in kid paramter
+7. Now I spent a lot of time researching. But I almost got no clue. Finally, I got a blog from OWASP that talks about a vulnerability (or maybe the only vulnerability) of the ES256 algorithm. So, if you replace the signature part of the JWT with “MAYCAQACAQA”, the server will take this as a valid signature.
