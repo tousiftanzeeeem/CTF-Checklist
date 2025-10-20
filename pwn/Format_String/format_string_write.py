@@ -1,3 +1,4 @@
+### This can be used to overwrite GOT to direct execution to any win function
 from pwn import *
 
 elf = context.binary = ELF('./vuln')
